@@ -1,0 +1,19 @@
+// B&W corporate palette
+export const COLORS = {
+  BG_BLACK: '#0A0A0A',
+  BG_DARK: '#141414',
+  BG_CARD: '#1A1A1A',
+  BG_CARD_HOVER: '#222222',
+  BORDER: '#2A2A2A',
+  BORDER_LIGHT: '#333333',
+  TEXT_WHITE: '#FFFFFF',
+  TEXT_GRAY: '#999999',
+  TEXT_MUTED: '#666666',
+  ACCENT: '#FFFFFF',
+  ACCENT_DIM: '#CCCCCC',
+  GLOW: 'rgba(255, 255, 255, 0.08)',
+  GLOW_STRONG: 'rgba(255, 255, 255, 0.15)',
+  SUCCESS: '#4ADE80',
+  WARNING: '#FBBF24',
+  ERROR: '#F87171',
+} as const;

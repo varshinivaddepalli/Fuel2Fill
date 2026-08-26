@@ -1,0 +1,31 @@
+{
+  "name": "petro-astra-promo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render PetroAstraPromo out/petro-astra-promo.mp4",
+    "generate-voiceover": "node --strip-types generate-voiceover.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.435",
+    "@remotion/google-fonts": "4.0.435",
+    "@remotion/media": "4.0.435",
+    "@remotion/paths": "4.0.435",
+    "@remotion/transitions": "4.0.435",
+    "@remotion/zod-types": "4.0.435",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.435",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.435",
+    "@remotion/renderer": "4.0.435",
+    "@remotion/tailwind-v4": "4.0.435",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}

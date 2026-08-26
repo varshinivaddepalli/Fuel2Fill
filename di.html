@@ -1,0 +1,717 @@
+<!DOCTYPE html><html><head>
+      <title>di</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/abhi/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.20/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="control-tower--document-intelligence-platform">Control Tower — Document Intelligence Platform </h1>
+<h2 id="solution-1-enterprise-document-processing-system">Solution 1: Enterprise Document Processing System </h2>
+<p>This document describes the complete architecture and workflow of the <strong>Control Tower</strong>, an enterprise-grade document intelligence system designed for multi-organization, multi-tenant document processing. Control Tower accepts documents from multiple sources (manual uploads, ERP integrations via Kafka), classifies them using AI, extracts structured data, validates the results, and routes output based on confidence — all while tracking costs per processing step.</p>
+<hr>
+<h2 id="master-flow-overview">Master Flow Overview </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                     CONTROL TOWER — COMPLETE FLOW                       │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+   ┌──────────┐    ┌──────────┐    ┌───────────┐    ┌──────────┐    ┌──────────┐
+   │  AUTH &amp;   │───▶│ DOCUMENT │───▶│    AI     │───▶│  RESULT  │───▶│  COST &amp;  │
+   │  API KEY  │    │  UPLOAD  │    │ PROCESSING│    │  OUTPUT  │    │ TRACKING │
+   └──────────┘    └──────────┘    └───────────┘    └──────────┘    └──────────┘
+     Step 1           Step 2          Step 3           Step 4          Step 5
+</code></pre><p>The Control Tower pipeline is a 5-step linear workflow:</p>
+<ol>
+<li><strong>Authentication &amp; API Key System</strong> — Every request must first prove its identity (JWT or API key), its authorization (role-based permissions), and its right to consume resources (quota and rate limits).</li>
+<li><strong>Document Upload</strong> — Documents enter the system via manual upload (web UI / direct API) or automated Kafka events from external ERP systems. Files are validated, stored securely, and pushed to a processing queue.</li>
+<li><strong>AI Processing Pipeline</strong> — A multi-stage pipeline converts files to text, classifies the document type using AI, extracts structured fields using schema-specific prompts, and validates results with rule-based checks.</li>
+<li><strong>Result Output &amp; Review</strong> — Extracted data is routed based on field-level confidence scores: high-confidence results are auto-approved, medium-confidence results go to human reviewers, and low-confidence results require manual entry.</li>
+<li><strong>Cost &amp; Tracking</strong> — Every AI call, OCR operation, and processing step is metered. Per-document cost is tracked and attributed to the originating organization for billing and analytics.</li>
+</ol>
+<p>Each step is described in detail below.</p>
+<hr>
+<h2 id="step-1-authentication--api-key-system">Step 1: Authentication &amp; API Key System </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                    AUTHENTICATION FLOW                                   │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+    ┌──────────────┐
+    │  ADMIN PANEL  │
+    └──────┬───────┘
+           │
+           ▼
+    ┌──────────────────────────────────────┐
+    │  1. CREATE ORGANIZATION              │
+    │     ├── org_name: "Al Adrak LLC"     │
+    │     ├── plan: "enterprise"           │
+    │     ├── monthly_scan_limit: 5000     │
+    │     └── modules_enabled: [3, 4]      │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+    ┌──────────────────────────────────────┐
+    │  2. CREATE USERS &amp; ROLES             │
+    │     ├── admin    → full access       │
+    │     ├── manager  → view + approve    │
+    │     ├── finance  → invoices only     │
+    │     ├── procurement → BOQ/RFQ only   │
+    │     └── viewer   → read-only         │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+    ┌──────────────────────────────────────┐
+    │  3. GENERATE API KEYS               │
+    │                                      │
+    │  For Axpert ERP Integration:         │
+    │  ┌────────────────────────────────┐  │
+    │  │ api_key: ct_live_ak_xxxx...   │  │
+    │  │ type: "erp_integration"       │  │
+    │  │ permissions: [upload, read]   │  │
+    │  │ rate_limit: 100 req/min      │  │
+    │  │ ip_whitelist: [10.0.0.x]     │  │
+    │  └────────────────────────────────┘  │
+    │                                      │
+    │  For Manual Upload (Web UI):         │
+    │  ┌────────────────────────────────┐  │
+    │  │ User logs in via email + pass │  │
+    │  │ Gets JWT token (24hr expiry)  │  │
+    │  │ Role determines access level  │  │
+    │  └────────────────────────────────┘  │
+    │                                      │
+    │  For Kafka Consumer:                 │
+    │  ┌────────────────────────────────┐  │
+    │  │ api_key: ct_live_kf_xxxx...   │  │
+    │  │ type: "kafka_consumer"        │  │
+    │  │ permissions: [consume, fetch] │  │
+    │  └────────────────────────────────┘  │
+    └──────────────────────────────────────┘
+</code></pre><h3 id="11-organization-provisioning">1.1 Organization Provisioning </h3>
+<p>The Control Tower is a <strong>multi-tenant</strong> system. Before any document can be processed, an organization must be created in the admin panel. Each organization record includes:</p>
+<ul>
+<li><strong>org_name</strong> — The company or entity name (e.g., "Al Adrak LLC").</li>
+<li><strong>plan</strong> — The subscription tier (e.g., "starter", "professional", "enterprise"), which determines feature availability and limits.</li>
+<li><strong>monthly_scan_limit</strong> — The maximum number of documents the organization can process per billing cycle. Once exceeded, further processing requests are rejected until the next cycle or until the limit is increased.</li>
+<li><strong>modules_enabled</strong> — A list of document module IDs the organization has access to. For example, module 3 might be "Invoice Processing" and module 4 might be "BOQ/RFQ Processing." This allows the platform to sell modular capabilities rather than all-or-nothing access.</li>
+</ul>
+<p>Organizations are the <strong>billing boundary</strong> — all cost tracking, usage quotas, and audit trails roll up to the organization level.</p>
+<h3 id="12-users--role-based-access-control-rbac">1.2 Users &amp; Role-Based Access Control (RBAC) </h3>
+<p>Within each organization, users are created with specific roles. Each role maps to a set of permissions that control what a user can see and do:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+<th>Typical Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>admin</strong></td>
+<td>Full access — create users, manage API keys, view all documents, configure settings</td>
+<td>IT administrators, system owners</td>
+</tr>
+<tr>
+<td><strong>manager</strong></td>
+<td>View documents, approve/reject review queue items</td>
+<td>Department heads who approve extracted data</td>
+</tr>
+<tr>
+<td><strong>finance</strong></td>
+<td>Access limited to invoice-type documents only</td>
+<td>Accounts payable team members</td>
+</tr>
+<tr>
+<td><strong>procurement</strong></td>
+<td>Access limited to BOQ (Bill of Quantities) and RFQ (Request for Quotation) documents</td>
+<td>Procurement team members</td>
+</tr>
+<tr>
+<td><strong>viewer</strong></td>
+<td>Read-only access to processed results</td>
+<td>Auditors, external stakeholders</td>
+</tr>
+</tbody>
+</table>
+<p>Roles are <strong>organization-scoped</strong> — a user with "admin" in one organization has no access to another organization's data.</p>
+<h3 id="13-api-key-generation">1.3 API Key Generation </h3>
+<p>The system supports three authentication mechanisms, each suited to a different integration pattern:</p>
+<p><strong>ERP Integration Keys</strong> (machine-to-machine):</p>
+<ul>
+<li>Prefixed with <code>ct_live_ak_</code> for easy identification.</li>
+<li>Typed as <code>"erp_integration"</code> with specific permissions (e.g., <code>[upload, read]</code>).</li>
+<li>Rate-limited (e.g., 100 requests/minute) to protect the system from runaway scripts.</li>
+<li>IP-whitelisted so only known ERP servers (e.g., <code>10.0.0.x</code> internal network) can use the key.</li>
+<li>These keys are designed for Axpert ERP or similar systems that push documents programmatically.</li>
+</ul>
+<p><strong>Web UI Authentication</strong> (human users):</p>
+<ul>
+<li>Standard email + password login flow.</li>
+<li>On successful authentication, the user receives a <strong>JWT token</strong> with a 24-hour expiry.</li>
+<li>The JWT encodes the user's role, organization ID, and permissions — the backend validates these on every request.</li>
+<li>No IP restriction; intended for browser-based access from anywhere.</li>
+</ul>
+<p><strong>Kafka Consumer Keys</strong> (event-driven):</p>
+<ul>
+<li>Prefixed with <code>ct_live_kf_</code> for identification.</li>
+<li>Typed as <code>"kafka_consumer"</code> with permissions <code>[consume, fetch]</code>.</li>
+<li>Used by the Control Tower's internal Kafka consumer service to authenticate when fetching document payloads referenced in Kafka events.</li>
+<li>These keys are internal system keys, not exposed to end users.</li>
+</ul>
+<h3 id="14-request-validation-pipeline">1.4 Request Validation Pipeline </h3>
+<p>Every incoming API call passes through a three-gate validation pipeline before reaching the processing logic:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>    EVERY API CALL:
+    ┌─────────────────────────────────────────────────────────┐
+    │                                                         │
+    │  Request                                                │
+    │  ┌───────────────────────────────────────────────┐      │
+    │  │ POST /api/documents/upload                    │      │
+    │  │ Headers:                                      │      │
+    │  │   Authorization: Bearer &lt;jwt_token&gt;           │      │
+    │  │   X-API-Key: ct_live_ak_xxxx (if ERP)        │      │
+    │  │   X-Org-ID: org_aladrak                       │      │
+    │  └───────────────────────────────────────────────┘      │
+    │         │                                               │
+    │         ▼                                               │
+    │  ┌─────────────┐  ┌──────────────┐  ┌──────────────┐   │
+    │  │ Validate    │─▶│ Check Role   │─▶│ Check Quota  │   │
+    │  │ Token/Key   │  │ Permission   │  │ &amp; Rate Limit │   │
+    │  └──────┬──────┘  └──────┬───────┘  └──────┬───────┘   │
+    │     FAIL│            FAIL│             FAIL │           │
+    │     401 │            403 │             429  │           │
+    │         │                │                  │           │
+    │         ▼ PASS           ▼ PASS             ▼ PASS     │
+    │  ┌─────────────────────────────────────────────────┐   │
+    │  │           PROCEED TO PROCESSING                  │   │
+    │  └─────────────────────────────────────────────────┘   │
+    └─────────────────────────────────────────────────────────┘
+</code></pre><p><strong>Gate 1 — Token/Key Validation (401 on failure):</strong><br>
+The system first checks whether the request carries a valid credential. For API key requests, it verifies the key exists, is not revoked, and (for ERP keys) that the request originates from a whitelisted IP. For JWT requests, it verifies the token signature and confirms it has not expired. A failure here returns HTTP 401 Unauthorized.</p>
+<p><strong>Gate 2 — Role Permission Check (403 on failure):</strong><br>
+Once identity is established, the system checks whether the authenticated user/key has permission to perform the requested action. A <code>finance</code> role user attempting to access a BOQ document would be rejected here. A failure returns HTTP 403 Forbidden.</p>
+<p><strong>Gate 3 — Quota &amp; Rate Limit Check (429 on failure):</strong><br>
+Even with valid identity and permissions, the request must pass resource checks. The system verifies the organization has not exceeded its <code>monthly_scan_limit</code> and that the API key's per-minute rate limit has not been breached. A failure returns HTTP 429 Too Many Requests, signaling the client to back off.</p>
+<p>Only when all three gates pass does the request proceed to document processing.</p>
+<hr>
+<h2 id="step-2-document-upload-flow">Step 2: Document Upload Flow </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                    DOCUMENT UPLOAD FLOW                                  │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+    TWO ENTRY POINTS:
+
+    ┌─────────────────────┐          ┌─────────────────────┐
+    │  A. MANUAL UPLOAD    │          │  B. KAFKA EVENT      │
+    │  (Web UI / API)      │          │  (From Axpert ERP)   │
+    │                      │          │                      │
+    │  User drags &amp; drops  │          │  axpert.document     │
+    │  file on dashboard   │          │  .uploaded event     │
+    └──────────┬──────────┘          └──────────┬──────────┘
+               │                                │
+               ▼                                ▼
+    ┌──────────────────────────────────────────────────────┐
+    │                 UPLOAD PROCESSOR                       │
+    │                                                       │
+    │  1. Validate file                                     │
+    │     ├── Size check (max 50MB)                         │
+    │     ├── Format check (PDF/Word/Excel/Image)           │
+    │     ├── Virus scan                                    │
+    │     └── Reject if invalid → return error              │
+    │                                                       │
+    │  2. Generate tracking ID                              │
+    │     └── doc_id: "DOC-2026-00001"                      │
+    │                                                       │
+    │  3. Store original file                               │
+    │     └── S3/Azure Blob → encrypted at rest             │
+    │                                                       │
+    │  4. Create DB record                                  │
+    │     ├── doc_id, org_id, uploaded_by                   │
+    │     ├── file_name, file_size, file_type               │
+    │     ├── status: "uploaded"                            │
+    │     ├── source: "manual" or "kafka"                   │
+    │     └── created_at: timestamp                         │
+    │                                                       │
+    │  5. Push to processing queue                          │
+    │     └── BullMQ job created                            │
+    │                                                       │
+    └──────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │   QUEUE       │
+                    │  (BullMQ)     │
+                    │  Waiting...   │
+                    └──────┬───────┘
+                           │
+                           ▼
+                      STEP 3...
+</code></pre><h3 id="21-two-entry-points">2.1 Two Entry Points </h3>
+<p>Documents enter the Control Tower through one of two channels:</p>
+<p><strong>A. Manual Upload (Web UI / API):</strong><br>
+Human users interact with the Control Tower dashboard — a web interface where they can drag and drop files or use a file picker. This is the primary interface for ad-hoc document processing, one-off uploads, and organizations that don't have ERP integration. The same upload endpoint (<code>POST /api/documents/upload</code>) can also be called directly via API for programmatic uploads that don't go through Kafka.</p>
+<p><strong>B. Kafka Event (From Axpert ERP):</strong><br>
+For organizations using Axpert ERP (or similar integrated systems), documents flow in automatically. When a document is uploaded or generated in Axpert, the ERP publishes a Kafka event to the topic <code>axpert.document.uploaded</code>. The Control Tower's Kafka consumer service listens on this topic, receives the event (which contains metadata and a reference to the file location), and feeds it into the same upload processing pipeline. This enables <strong>zero-touch automation</strong> — documents flow from the ERP into AI processing without any human intervention.</p>
+<p>Both entry points converge into a single <strong>Upload Processor</strong>, ensuring consistent handling regardless of source.</p>
+<h3 id="22-upload-processor--5-step-ingestion">2.2 Upload Processor — 5-Step Ingestion </h3>
+<p><strong>Step 2.1 — File Validation:</strong><br>
+Before any storage or processing occurs, the file undergoes strict validation:</p>
+<ul>
+<li><strong>Size check</strong>: Files larger than 50MB are rejected. This prevents abuse and ensures the processing pipeline can handle files within reasonable memory and time constraints.</li>
+<li><strong>Format check</strong>: Only supported formats are accepted — PDF, Word (.docx), Excel (.xlsx), and image files (PNG, JPG, TIFF). Unsupported formats (e.g., .exe, .zip) are immediately rejected.</li>
+<li><strong>Virus scan</strong>: The file is scanned for malware before being stored. This is critical since documents can come from external ERP systems or user uploads and must not introduce threats into the infrastructure.</li>
+<li><strong>Rejection</strong>: If any validation fails, the system returns an error response immediately with a descriptive message. No database record is created, no file is stored — the invalid upload is discarded entirely.</li>
+</ul>
+<p><strong>Step 2.2 — Tracking ID Generation:</strong><br>
+Each accepted document is assigned a unique, human-readable tracking ID following the format <code>DOC-YYYY-NNNNN</code> (e.g., <code>DOC-2026-00001</code>). This ID is used throughout the system — in the processing pipeline, in the review queue, in the audit trail, and in notifications. The sequential numbering is scoped per organization, so each org has its own clean sequence.</p>
+<p><strong>Step 2.3 — Secure File Storage:</strong><br>
+The original file is stored in cloud object storage (S3 or Azure Blob Storage, depending on deployment). Files are <strong>encrypted at rest</strong> using the cloud provider's server-side encryption. The storage path includes the organization ID and document ID for clean namespacing (e.g., <code>s3://controltower-docs/org_aladrak/DOC-2026-00001/original.pdf</code>). The original file is preserved immutably — all processing operates on copies, ensuring the source document is always available for re-processing or auditing.</p>
+<p><strong>Step 2.4 — Database Record Creation:</strong><br>
+A record is created in the <code>documents</code> table with the following fields:</p>
+<ul>
+<li><code>doc_id</code> — The generated tracking ID.</li>
+<li><code>org_id</code> — The organization this document belongs to (for multi-tenant isolation).</li>
+<li><code>uploaded_by</code> — The user ID or API key that initiated the upload.</li>
+<li><code>file_name</code> — The original filename (for display purposes).</li>
+<li><code>file_size</code> — File size in bytes.</li>
+<li><code>file_type</code> — MIME type or extension (e.g., <code>application/pdf</code>).</li>
+<li><code>status</code> — Set to <code>"uploaded"</code> — the initial state in the document lifecycle.</li>
+<li><code>source</code> — Either <code>"manual"</code> (web UI / API) or <code>"kafka"</code> (ERP integration).</li>
+<li><code>created_at</code> — Timestamp of upload.</li>
+</ul>
+<p>This record serves as the central tracking entity that all subsequent steps update.</p>
+<p><strong>Step 2.5 — Push to Processing Queue:</strong><br>
+Finally, a job is created in the <strong>BullMQ</strong> queue with the document ID as the payload. BullMQ (a Redis-backed job queue for Node.js) provides reliable, persistent job processing with:</p>
+<ul>
+<li><strong>Retry logic</strong> — Failed jobs can be automatically retried with configurable backoff.</li>
+<li><strong>Priority queues</strong> — Enterprise-tier organizations could get higher priority.</li>
+<li><strong>Concurrency control</strong> — The number of parallel processing workers is configurable.</li>
+<li><strong>Dead letter queue</strong> — Jobs that fail after all retries are moved to a dead letter queue for manual investigation.</li>
+</ul>
+<p>The document status remains <code>"uploaded"</code> while in the queue. Once a worker picks it up, the status transitions to <code>"processing"</code>.</p>
+<hr>
+<h2 id="step-3-ai-processing-pipeline">Step 3: AI Processing Pipeline </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                    AI PROCESSING PIPELINE                                │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+    ┌──────────────┐
+    │  FROM QUEUE   │
+    │  Job picked   │
+    └──────┬───────┘
+           │
+           ▼
+    ┌──────────────────────────────────────┐
+    │  1. FILE CONVERSION                  │
+    │                                      │
+    │  ┌─────────┐  ┌────────────────────┐ │
+    │  │Digital  │─▶│ pdf-parse          │ │
+    │  │PDF      │  │ (direct text)      │ │
+    │  └─────────┘  └────────────────────┘ │
+    │  ┌─────────┐  ┌────────────────────┐ │
+    │  │Scanned  │─▶│ OCR Engine         │ │    ┌─────────────────┐
+    │  │PDF/Image│  │ (image → text)     │─────▶│ COST: OCR CALL  │
+    │  └─────────┘  └────────────────────┘ │    │ $0.01 per page  │
+    │  ┌─────────┐  ┌────────────────────┐ │    └─────────────────┘
+    │  │Word     │─▶│ mammoth            │ │
+    │  │(.docx)  │  │ (extract text)     │ │
+    │  └─────────┘  └────────────────────┘ │
+    │  ┌─────────┐  ┌────────────────────┐ │
+    │  │Excel    │─▶│ exceljs            │ │
+    │  │(.xlsx)  │  │ (cells → text)     │ │
+    │  └─────────┘  └────────────────────┘ │
+    │                                      │
+    │  status: "processing"                │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+    ┌──────────────────────────────────────┐
+    │  2. DOCUMENT CLASSIFICATION          │
+    │                                      │    ┌─────────────────┐
+    │  Send text to Claude AI ─────────────────▶│ COST: AI CALL #1│
+    │  "What type of document is this?"    │    │ ~$0.003         │
+    │                                      │    └─────────────────┘
+    │  Result:                             │
+    │  ├── type: "INVOICE"                 │
+    │  ├── confidence: 97%                 │
+    │  └── language: "English"             │
+    │                                      │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+    ┌──────────────────────────────────────┐
+    │  3. FIELD EXTRACTION                 │
+    │                                      │
+    │  Based on detected type, send to     │    ┌─────────────────┐
+    │  Claude AI with correct schema ──────────▶│ COST: AI CALL #2│
+    │                                      │    │ ~$0.01-0.05     │
+    │  Invoice → INVOICE_SCHEMA            │    │ (depends on     │
+    │  BOQ     → BOQ_SCHEMA                │    │  document size) │
+    │  Contract→ CONTRACT_SCHEMA           │    └─────────────────┘
+    │  RFQ     → RFQ_SCHEMA                │
+    │  Expense → EXPENSE_SCHEMA            │
+    │                                      │
+    │  Output: structured JSON with        │
+    │  confidence per field                │
+    │                                      │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+    ┌──────────────────────────────────────┐
+    │  4. VALIDATION ENGINE (no AI cost)   │
+    │                                      │
+    │  ├── Math checks (qty × rate = amt)  │
+    │  ├── Duplicate check (DB lookup)     │
+    │  ├── PO/GRN match (DB lookup)        │
+    │  ├── Vendor match (DB lookup)        │
+    │  ├── Tax validation (rule-based)     │
+    │  └── Tolerance checks (configured)   │
+    │                                      │
+    │  Cost: $0.00 (all local processing)  │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+    ┌──────────────────────────────────────┐
+    │  5. SAVE RESULTS                     │
+    │                                      │
+    │  ├── extraction_results table        │
+    │  ├── validation_results table        │
+    │  ├── Update doc status:              │
+    │  │   "completed" or "needs_review"   │
+    │  ├── Log to audit_trail              │
+    │  └── Log to cost_tracking            │
+    │                                      │
+    │  status: "completed"                 │
+    └──────────────┬───────────────────────┘
+                   │
+                   ▼
+                STEP 4...
+</code></pre><p>This is the core of the system — where raw files become structured, validated data. The pipeline has 5 sub-steps, each with clear cost implications.</p>
+<h3 id="31-file-conversion">3.1 File Conversion </h3>
+<p>The first task is to extract raw text from the uploaded file. Different file formats require different extraction strategies:</p>
+<table>
+<thead>
+<tr>
+<th>File Type</th>
+<th>Library/Tool</th>
+<th>Method</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Digital PDF</strong></td>
+<td><code>pdf-parse</code></td>
+<td>Direct text extraction from the PDF's text layer</td>
+<td>$0.00 (local)</td>
+</tr>
+<tr>
+<td><strong>Scanned PDF / Image</strong></td>
+<td>OCR Engine (e.g., Tesseract, Azure Document Intelligence)</td>
+<td>Optical character recognition — the image is analyzed to produce text</td>
+<td><strong>$0.01 per page</strong></td>
+</tr>
+<tr>
+<td><strong>Word (.docx)</strong></td>
+<td><code>mammoth</code></td>
+<td>Parses the OOXML structure and extracts text content</td>
+<td>$0.00 (local)</td>
+</tr>
+<tr>
+<td><strong>Excel (.xlsx)</strong></td>
+<td><code>exceljs</code></td>
+<td>Iterates through sheets and cells, converting cell values to a text representation</td>
+<td>$0.00 (local)</td>
+</tr>
+</tbody>
+</table>
+<p>The system detects whether a PDF is digital (has a text layer) or scanned (image-only) and routes accordingly. <strong>OCR is the only conversion step that incurs cost</strong>, at approximately $0.01 per page — this is tracked and attributed to the document's organization.</p>
+<p>After conversion, the document's status is updated to <code>"processing"</code> in the database.</p>
+<h3 id="32-document-classification-ai-call-1">3.2 Document Classification (AI Call #1) </h3>
+<p>With the extracted text in hand, the system sends it to <strong>Claude AI</strong> with a classification prompt: <em>"What type of document is this?"</em></p>
+<p>The AI returns:</p>
+<ul>
+<li><strong>type</strong> — The document category (e.g., <code>INVOICE</code>, <code>BOQ</code>, <code>CONTRACT</code>, <code>RFQ</code>, <code>EXPENSE</code>).</li>
+<li><strong>confidence</strong> — A percentage indicating how certain the model is about its classification (e.g., 97%).</li>
+<li><strong>language</strong> — The detected language of the document (e.g., "English", "Arabic").</li>
+</ul>
+<p><strong>Cost: ~$0.003 per classification call.</strong> This is the cheapest AI call in the pipeline because the prompt is short and the response is a small structured object. The classification result determines which extraction schema to use in the next step — getting this right is critical, because using the wrong schema would produce garbage output.</p>
+<h3 id="33-field-extraction-ai-call-2">3.3 Field Extraction (AI Call #2) </h3>
+<p>Based on the classification result, the system selects the appropriate extraction schema and sends the full document text to Claude AI with a structured extraction prompt. The schema defines exactly which fields to extract:</p>
+<ul>
+<li><strong>INVOICE_SCHEMA</strong> — Vendor name, invoice number, date, line items (description, quantity, rate, amount), subtotal, tax, total, payment terms, bank details, etc.</li>
+<li><strong>BOQ_SCHEMA</strong> — Project name, section, item descriptions, quantities, units, unit rates, amounts, totals.</li>
+<li><strong>CONTRACT_SCHEMA</strong> — Parties involved, contract number, effective date, expiry date, terms, obligations, values, signatures.</li>
+<li><strong>RFQ_SCHEMA</strong> — Requester, items requested, specifications, quantities, delivery requirements, deadline.</li>
+<li><strong>EXPENSE_SCHEMA</strong> — Claimant, expense category, date, amount, receipt details, approval status.</li>
+</ul>
+<p>The AI returns a <strong>structured JSON object</strong> with the extracted field values, and critically, a <strong>confidence score per field</strong>. For example:</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"vendor_name"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"Al Adrak Building Materials"</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.98</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"invoice_number"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"INV-2026-0042"</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"total_amount"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token number">15750.00</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.95</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"line_items"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"description"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"Portland Cement 50kg"</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.92</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"quantity"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.96</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"rate"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token number">45.00</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.88</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"amount"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"value"</span><span class="token operator">:</span> <span class="token number">9000.00</span><span class="token punctuation">,</span> <span class="token property">"confidence"</span><span class="token operator">:</span> <span class="token number">0.94</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>Cost: ~<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.01</mn><mtext>–</mtext></mrow><annotation encoding="application/x-tex">0.01–</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.01–</span></span></span></span>0.05 per extraction call</strong>, depending on document size. Longer documents (multi-page invoices with many line items, detailed contracts) consume more tokens and thus cost more. This is the most expensive AI call in the pipeline.</p>
+<h3 id="34-validation-engine-no-ai-cost">3.4 Validation Engine (No AI Cost) </h3>
+<p>After extraction, the results pass through a <strong>rule-based validation engine</strong> — no AI calls are made, so this step costs $0.00. The validation engine performs:</p>
+<ul>
+<li><strong>Math checks</strong> — Verifies arithmetic consistency. For invoices: does <code>quantity × rate = line amount</code>? Does the sum of line amounts equal the subtotal? Does <code>subtotal + tax = total</code>? Discrepancies are flagged.</li>
+<li><strong>Duplicate check</strong> — Queries the database to see if a document with the same invoice number + vendor combination has already been processed. Prevents double-entry of the same invoice.</li>
+<li><strong>PO/GRN match</strong> — For invoices that reference a Purchase Order (PO) or Goods Receipt Note (GRN), the system looks up the PO/GRN in the database and verifies that quantities and amounts match within tolerance.</li>
+<li><strong>Vendor match</strong> — Checks if the extracted vendor name matches a known vendor in the organization's master data. Fuzzy matching may be used to handle minor spelling variations.</li>
+<li><strong>Tax validation</strong> — Applies country/region-specific tax rules. For example, verifying that VAT is calculated at the correct rate, or that the tax registration number format is valid.</li>
+<li><strong>Tolerance checks</strong> — Configurable per organization. For example, an org might allow a 2% variance between PO amount and invoice amount before flagging a mismatch.</li>
+</ul>
+<p>Validation results are recorded per field — each check either passes or produces a warning/error that is attached to the field for downstream review.</p>
+<h3 id="35-save-results">3.5 Save Results </h3>
+<p>All outputs from the pipeline are persisted:</p>
+<ul>
+<li><strong>extraction_results table</strong> — The full structured JSON with all extracted fields and their confidence scores.</li>
+<li><strong>validation_results table</strong> — The results of each validation check (pass/fail/warning per field).</li>
+<li><strong>Document status update</strong> — The document status is updated to either:
+<ul>
+<li><code>"completed"</code> — All fields are high confidence and all validations pass. Ready for consumption.</li>
+<li><code>"needs_review"</code> — One or more fields have medium/low confidence, or a validation check flagged an issue.</li>
+</ul>
+</li>
+<li><strong>audit_trail</strong> — A log entry recording who/what processed the document, when each step occurred, and the outcome.</li>
+<li><strong>cost_tracking</strong> — The total cost for processing this document (OCR cost + AI call #1 cost + AI call #2 cost), attributed to the organization.</li>
+</ul>
+<hr>
+<h2 id="step-4-result-output--review">Step 4: Result Output &amp; Review </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                    RESULT OUTPUT &amp; REVIEW                                │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+    ┌──────────────────────────────────────────────────┐
+    │           CONFIDENCE-BASED ROUTING                │
+    │                                                   │
+    │         All fields &gt;= 95%                         │
+    │  ┌──────────────────────────────────┐             │
+    │  │  AUTO-APPROVED                    │             │
+    │  │  -&gt; Results saved directly        │             │
+    │  │  -&gt; Available on dashboard        │             │
+    │  │  -&gt; Notification sent             │             │
+    │  └──────────────────────────────────┘             │
+    │                                                   │
+    │         Any field 70-95%                          │
+    │  ┌──────────────────────────────────┐             │
+    │  │  HUMAN REVIEW QUEUE              │             │
+    │  │  -&gt; Assigned to reviewer by role  │             │
+    │  │  -&gt; Side-by-side review screen    │             │
+    │  │  -&gt; User corrects -&gt; saves        │             │
+    │  │  -&gt; Corrections feed training     │             │
+    │  └──────────────────────────────────┘             │
+    │                                                   │
+    │         Any field &lt; 70%                           │
+    │  ┌──────────────────────────────────┐             │
+    │  │  MANUAL ENTRY                     │             │
+    │  │  -&gt; Flagged as low confidence     │             │
+    │  │  -&gt; User manually fills fields    │             │
+    │  │  -&gt; Manual entries feed training  │             │
+    │  └──────────────────────────────────┘             │
+    └──────────────────────────────────────────────────┘
+
+    NOTIFICATION:
+    ┌──────────────────────────────────────────────────┐
+    │  -&gt; In-app notification (Control Tower dashboard) │
+    │  -&gt; Email notification (configurable)             │
+    │  -&gt; Kafka event back (for Axpert to consume)      │
+    │     topic: controltower.document.processed        │
+    └──────────────────────────────────────────────────┘
+</code></pre><h3 id="41-confidence-based-routing">4.1 Confidence-Based Routing </h3>
+<p>The extracted data doesn't go to a single destination — it's <strong>routed based on the confidence scores</strong> of the extracted fields. This is the key to balancing automation speed with data accuracy:</p>
+<p><strong>Tier 1 — Auto-Approved (All fields &gt;= 95% confidence):</strong><br>
+When every extracted field has a confidence of 95% or higher and all validation checks pass, the document is <strong>automatically approved</strong> with no human involvement. The extracted data is saved as final, immediately appears on the organization's dashboard, and a notification is sent. This is the ideal path — maximum automation, minimum cost, fastest throughput.</p>
+<p><strong>Tier 2 — Human Review Queue (Any field 70–95% confidence):</strong><br>
+If any field falls between 70% and 95% confidence, the document is routed to the <strong>human review queue</strong>. The system assigns it to a reviewer based on the user's role — for example, an invoice with a questionable amount goes to a finance-role user, while a BOQ with unclear quantities goes to procurement. The reviewer sees a <strong>side-by-side screen</strong>: the original document on the left, the extracted data on the right, with low-confidence fields highlighted. The reviewer corrects any errors and saves. Crucially, <strong>corrections feed back into a training loop</strong> — over time, the AI learns from reviewer corrections and the percentage of documents requiring review decreases.</p>
+<p><strong>Tier 3 — Manual Entry (Any field &lt; 70% confidence):</strong><br>
+When any field drops below 70% confidence, the system considers the extraction unreliable. The document is <strong>flagged for manual entry</strong> — the user must fill in the fields by hand, typically referring to the original document. This is the most expensive path in terms of human labor, but it ensures data quality is never compromised. Like Tier 2, manual entries are captured as training data to improve future extraction accuracy.</p>
+<p>The confidence thresholds (95% and 70%) are likely configurable per organization, allowing each org to tune the trade-off between automation and accuracy based on their tolerance for errors.</p>
+<h3 id="42-notifications">4.2 Notifications </h3>
+<p>When a document completes processing (regardless of which confidence tier it falls into), notifications are dispatched through three channels:</p>
+<ul>
+<li><strong>In-app notification</strong> — Appears on the Control Tower dashboard. Users see a real-time notification badge or toast indicating a new document has been processed or requires their review.</li>
+<li><strong>Email notification</strong> — Sent to relevant users (configurable per organization). For example, a finance manager might opt to receive an email whenever an invoice over $10,000 is flagged for review.</li>
+<li><strong>Kafka event</strong> — For organizations with ERP integration, the Control Tower publishes a Kafka event to the topic <code>controltower.document.processed</code>. Axpert ERP (or any subscribing system) consumes this event and can automatically update its records with the extracted data. This closes the loop — documents flow from ERP → Control Tower → back to ERP, fully automated for high-confidence extractions.</li>
+</ul>
+<hr>
+<h2 id="step-5-cost--tracking">Step 5: Cost &amp; Tracking </h2>
+<p>Cost tracking is woven throughout the entire pipeline rather than being a standalone processing step. Every operation that incurs a cost is logged in real-time to the <code>cost_tracking</code> table.</p>
+<h3 id="51-per-document-cost-breakdown">5.1 Per-Document Cost Breakdown </h3>
+<p>Each processed document has an itemized cost record:</p>
+<table>
+<thead>
+<tr>
+<th>Processing Step</th>
+<th>Cost Component</th>
+<th>Typical Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File Conversion — Digital PDF/Word/Excel</td>
+<td>Local processing</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>File Conversion — Scanned PDF/Image (OCR)</td>
+<td>OCR API call</td>
+<td>~$0.01 per page</td>
+</tr>
+<tr>
+<td>Document Classification</td>
+<td>AI Call #1 (Claude)</td>
+<td>~$0.003</td>
+</tr>
+<tr>
+<td>Field Extraction</td>
+<td>AI Call #2 (Claude)</td>
+<td>~<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.01</mn><mtext>–</mtext></mrow><annotation encoding="application/x-tex">0.01–</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.01–</span></span></span></span>0.05</td>
+</tr>
+<tr>
+<td>Validation Engine</td>
+<td>Local processing</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td><strong>Total per document</strong></td>
+<td></td>
+<td><strong>~<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.01</mn><mtext>–</mtext></mrow><annotation encoding="application/x-tex">0.01–</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.01–</span></span></span></span>0.07</strong></td>
+</tr>
+</tbody>
+</table>
+<p>For a typical 3-page digital PDF invoice, the cost is approximately: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.00</mn><mo stretchy="false">(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo></mrow><annotation encoding="application/x-tex">0.00 (conversion) +</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.00</span><span class="mopen">(</span><span class="mord mathnormal">co</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ers</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mord">+</span></span></span></span>0.003 (classification) + <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.02</mn><mo stretchy="false">(</mo><mi>e</mi><mi>x</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mo>∗</mo><mo>∗</mo><mtext>&nbsp;</mtext></mrow><annotation encoding="application/x-tex">0.02 (extraction) = **~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.02</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span><span class="mord">∗</span><span class="mspace nobreak">&nbsp;</span></span></span></span>0.023 per document**.</p>
+<p>For a 10-page scanned PDF, the cost rises: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.10</mn><mo stretchy="false">(</mo><mi>O</mi><mi>C</mi><mi>R</mi><mo separator="true">,</mo><mn>10</mn><mi>p</mi><mi>a</mi><mi>g</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>+</mo></mrow><annotation encoding="application/x-tex">0.10 (OCR, 10 pages) +</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.10</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.00773em;">OCR</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">10</span><span class="mord mathnormal">p</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">es</span><span class="mclose">)</span><span class="mord">+</span></span></span></span>0.003 (classification) + <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.05</mn><mo stretchy="false">(</mo><mi>e</mi><mi>x</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo separator="true">,</mo><mi>l</mi><mi>a</mi><mi>r</mi><mi>g</mi><mi>e</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>x</mi><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo>∗</mo><mo>∗</mo><mtext>&nbsp;</mtext></mrow><annotation encoding="application/x-tex">0.05 (extraction, larger text) = **~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.05</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span><span class="mord">∗</span><span class="mspace nobreak">&nbsp;</span></span></span></span>0.153 per document**.</p>
+<h3 id="52-organization-level-tracking">5.2 Organization-Level Tracking </h3>
+<p>Costs roll up to the organization level for billing and analytics:</p>
+<ul>
+<li><strong>Monthly cost by org</strong> — Total processing cost attributed to each organization during a billing cycle.</li>
+<li><strong>Cost by document type</strong> — Which document types are most expensive to process (scanned vs. digital, invoices vs. contracts).</li>
+<li><strong>Cost by source</strong> — Whether Kafka-ingested documents have different cost profiles than manual uploads (e.g., ERP documents might be more consistently formatted and thus cheaper to extract).</li>
+<li><strong>Usage vs. quota</strong> — How many of the organization's <code>monthly_scan_limit</code> have been consumed, and how much budget remains.</li>
+</ul>
+<h3 id="53-audit-trail">5.3 Audit Trail </h3>
+<p>The <code>audit_trail</code> table provides a complete, immutable history of every action taken on every document:</p>
+<ul>
+<li>Upload events (who uploaded, when, from which source).</li>
+<li>Processing events (each pipeline step with timestamps and outcomes).</li>
+<li>Review events (who reviewed, what they changed, when they approved).</li>
+<li>Cost events (each billable operation with exact amounts).</li>
+<li>Access events (who viewed the document or its extracted data).</li>
+</ul>
+<p>This audit trail is essential for compliance, dispute resolution, and operational visibility. In regulated industries, it provides the evidence chain needed for financial audits — proving that an invoice amount was AI-extracted, human-verified, and approved by an authorized user before payment.</p>
+<hr>
+<h2 id="technology-summary">Technology Summary </h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Technology</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job Queue</td>
+<td><strong>BullMQ</strong> (Redis-backed)</td>
+<td>Reliable async job processing with retries, priorities, and dead letter queues</td>
+</tr>
+<tr>
+<td>Event Streaming</td>
+<td><strong>Apache Kafka</strong></td>
+<td>Bidirectional ERP integration (ingest from Axpert, publish processed results)</td>
+</tr>
+<tr>
+<td>Object Storage</td>
+<td><strong>S3 / Azure Blob</strong></td>
+<td>Encrypted-at-rest storage for original document files</td>
+</tr>
+<tr>
+<td>AI Engine</td>
+<td><strong>Claude AI</strong></td>
+<td>Document classification and structured field extraction</td>
+</tr>
+<tr>
+<td>PDF Parsing</td>
+<td><strong>pdf-parse</strong></td>
+<td>Text extraction from digital PDFs</td>
+</tr>
+<tr>
+<td>OCR</td>
+<td>OCR Engine (e.g., Tesseract / Azure DI)</td>
+<td>Image-to-text for scanned documents</td>
+</tr>
+<tr>
+<td>Word Parsing</td>
+<td><strong>mammoth</strong></td>
+<td>Text extraction from .docx files</td>
+</tr>
+<tr>
+<td>Excel Parsing</td>
+<td><strong>exceljs</strong></td>
+<td>Cell-to-text extraction from .xlsx files</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>JWT + API Keys</td>
+<td>Dual authentication: human users (JWT) and machine integrations (API keys)</td>
+</tr>
+<tr>
+<td>RBAC</td>
+<td>Custom role system</td>
+<td>5 roles (admin, manager, finance, procurement, viewer) with granular permissions</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="document-lifecycle-states">Document Lifecycle States </h2>
+<p>A document transitions through the following states during its lifecycle:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>uploaded → processing → completed
+                     → needs_review → completed (after human review)
+                     → manual_entry → completed (after manual fill)
+                     → failed (if pipeline error after retries)
+</code></pre><ul>
+<li><strong>uploaded</strong> — File received, validated, stored, and queued.</li>
+<li><strong>processing</strong> — Worker has picked up the job; conversion + AI pipeline is running.</li>
+<li><strong>completed</strong> — All fields extracted, validated, and either auto-approved or human-approved.</li>
+<li><strong>needs_review</strong> — Extraction done but some fields have medium confidence (70–95%); awaiting human reviewer.</li>
+<li><strong>manual_entry</strong> — Some fields have low confidence (&lt;70%); requires manual data entry.</li>
+<li><strong>failed</strong> — Processing encountered an unrecoverable error after all retries are exhausted; moved to dead letter queue for investigation.</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

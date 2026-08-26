@@ -1,0 +1,4353 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "s9DoW",
+      "x": 0,
+      "y": 0,
+      "name": "Daily Entry Page",
+      "width": 1280,
+      "fill": "$page-bg",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        48,
+        56
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "akLdE",
+          "name": "Header Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "fqxr6",
+              "name": "Title Row",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Irihw",
+                  "name": "titleText",
+                  "fill": "$text-primary",
+                  "content": "DAILY ENTRY",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 36,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "fN8YN",
+                  "name": "dateLabel",
+                  "fill": "$text-muted",
+                  "content": "Friday, 14 March 2026",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iQrrg",
+              "name": "Filter Bar",
+              "width": "fill_container",
+              "fill": "$card-bg",
+              "gap": 20,
+              "padding": 24,
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "muK3c",
+                  "name": "Station Filter",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XWi4o",
+                      "name": "stationLabel",
+                      "fill": "$text-secondary",
+                      "content": "STATION",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MVgNP",
+                      "name": "Station Dropdown",
+                      "width": "fill_container",
+                      "height": 42,
+                      "fill": "$input-bg",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "427Xu",
+                          "name": "stationValue",
+                          "fill": "$text-primary",
+                          "content": "Highway Star Fuels — NH48",
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "4Gr0g",
+                          "name": "stationChevron",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-muted"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G56XO",
+                  "name": "Date Filter",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qXA8P",
+                      "name": "dateLabel",
+                      "fill": "$text-secondary",
+                      "content": "DATE",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iDg77",
+                      "name": "Date Picker",
+                      "width": "fill_container",
+                      "height": 42,
+                      "fill": "$input-bg",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mCyDn",
+                          "name": "dateValue",
+                          "fill": "$text-primary",
+                          "content": "14 Mar 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "yx68i",
+                          "name": "dateIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-muted"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FQQnE",
+                  "name": "Employee Filter",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hw0IS",
+                      "name": "empLabel",
+                      "fill": "$text-secondary",
+                      "content": "RECORDED BY",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Rks8x",
+                      "name": "Employee Dropdown",
+                      "width": "fill_container",
+                      "height": 42,
+                      "fill": "$input-bg",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "S9hLJ",
+                          "name": "empValue",
+                          "fill": "$text-primary",
+                          "content": "Rajesh Kumar",
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "8xJpk",
+                          "name": "empChevron",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-muted"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EQeu9",
+          "name": "Fuel Price Entry",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NaeaK",
+              "name": "Section Header",
+              "width": "fill_container",
+              "fill": "$dark-bg",
+              "padding": [
+                16,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sxe2n",
+                  "name": "fuelPriceIcon",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Sb1mS",
+                      "name": "fpIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "fuel",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "I1MUr",
+                      "name": "fpTitle",
+                      "fill": "$text-on-dark",
+                      "content": "FUEL PRICE ENTRY",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "9fX1v",
+                  "name": "fpNote",
+                  "fill": "$text-muted",
+                  "content": "Set today's fuel prices",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AJWX8",
+              "name": "Fuel Price Table",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l5zyu",
+                  "name": "Table Header Row",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "$card-bg",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GbVv1",
+                      "name": "fpThFuel",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pwk8l",
+                          "name": "fpThFuelText",
+                          "fill": "$text-secondary",
+                          "content": "FUEL TYPE",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9gFiM",
+                      "name": "fpThPrice",
+                      "width": 200,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2pw0s",
+                          "name": "fpThPriceText",
+                          "fill": "$text-secondary",
+                          "content": "PRICE (₹/L)",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JyBBc",
+                  "name": "Petrol Row",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "$white",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nFCdk",
+                      "name": "fpRow1Fuel",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "x5StM",
+                          "name": "fpRow1Dot",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#E67E22"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RpCiE",
+                          "name": "fpRow1Name",
+                          "fill": "$text-primary",
+                          "content": "Petrol",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8OEwa",
+                      "name": "fpRow1Price",
+                      "width": 200,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "PsPYl",
+                          "name": "fpRow1Input",
+                          "width": 160,
+                          "height": 34,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jjOuW",
+                              "name": "fpRow1Val",
+                              "fill": "$text-primary",
+                              "content": "106.31",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "39H9s",
+                  "name": "Diesel Row",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "$white",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y9BDT",
+                      "name": "fpRow2Fuel",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "VII9l",
+                          "name": "fpRow2Dot",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#3498DB"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QPBmU",
+                          "name": "fpRow2Name",
+                          "fill": "$text-primary",
+                          "content": "Diesel",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QXg05",
+                      "name": "fpRow2Price",
+                      "width": 200,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zZT3d",
+                          "name": "fpRow2Input",
+                          "width": 160,
+                          "height": 34,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "GRcXa",
+                              "name": "fpRow2Val",
+                              "fill": "$text-primary",
+                              "content": "94.27",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Gj0pU",
+                  "name": "Add Row",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$white",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "RsxmF",
+                      "name": "fpAddIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "plus",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KfstO",
+                      "name": "fpAddText",
+                      "fill": "$accent",
+                      "content": "Add Fuel Type",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "asfpX",
+          "name": "Nozzle Sale Entry",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ALg4R",
+              "name": "Section Header",
+              "width": "fill_container",
+              "fill": "$dark-bg",
+              "padding": [
+                16,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PfZLg",
+                  "name": "nozzleIconGroup",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "zijpN",
+                      "name": "nzIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "gauge",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pFDw2",
+                      "name": "nzTitle",
+                      "fill": "$text-on-dark",
+                      "content": "NOZZLE SALE ENTRY",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "rVIrE",
+                  "name": "nzNote",
+                  "fill": "$text-muted",
+                  "content": "Enter closing readings for each nozzle",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "flYtt",
+              "name": "Nozzle Body",
+              "width": "fill_container",
+              "fill": "$page-bg",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZCaEb",
+                  "name": "Petrol Group",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "j0gan",
+                      "name": "petrolLabel",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Xqsfi",
+                          "name": "petrolDot",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#E67E22"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nItwS",
+                          "name": "petrolName",
+                          "fill": "$text-primary",
+                          "content": "PETROL",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "6Bz2M",
+                          "name": "petrolPrice",
+                          "fill": "$text-muted",
+                          "content": "₹106.31/L",
+                          "fontFamily": "Inter",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CoQvf",
+                      "name": "Petrol Nozzle Cards",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "2zhxH",
+                          "name": "Nozzle N1",
+                          "width": "fill_container",
+                          "fill": "$white",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "NAPC3",
+                              "name": "n1Header",
+                              "width": "fill_container",
+                              "fill": "$card-bg",
+                              "stroke": {
+                                "thickness": {
+                                  "bottom": 1
+                                },
+                                "fill": "$border"
+                              },
+                              "padding": [
+                                10,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "9fast",
+                                  "name": "n1Label",
+                                  "fill": "$text-primary",
+                                  "content": "N1",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "UbFbW",
+                                  "name": "n1Pump",
+                                  "fill": "$text-muted",
+                                  "content": "Pump 1",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "uzhga",
+                              "name": "n1Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "eRVY5",
+                                  "name": "n1OpenRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "zLloI",
+                                      "name": "n1OpenLabel",
+                                      "fill": "$text-muted",
+                                      "content": "OPEN READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "zVTf8",
+                                      "name": "n1OpenVal",
+                                      "fill": "$text-secondary",
+                                      "content": "45,230.5",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 13,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "6MWij",
+                                  "name": "n1CloseRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "pgn8A",
+                                      "name": "n1CloseLabel",
+                                      "fill": "$text-primary",
+                                      "content": "CLOSE READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "vKrss",
+                                      "name": "n1CloseInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "weZzu",
+                                          "name": "n1CloseVal",
+                                          "fill": "$text-primary",
+                                          "content": "45,680.2",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "cWHBk",
+                                  "name": "n1TestRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "JkSxe",
+                                      "name": "n1TestLabel",
+                                      "fill": "$text-muted",
+                                      "content": "TESTING QTY (L)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "qK6o7",
+                                      "name": "n1TestInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "0H2a1",
+                                          "name": "n1TestVal",
+                                          "fill": "$text-primary",
+                                          "content": "0.5",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "eNgn3",
+                                  "name": "n1Divider",
+                                  "width": "fill_container",
+                                  "height": 1,
+                                  "fill": "$border"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "IydEC",
+                                  "name": "n1PayLabel",
+                                  "fill": "$text-muted",
+                                  "content": "PAYMENT SPLIT",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "REphe",
+                                  "name": "n1UpiRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "3KMGT",
+                                      "name": "n1UpiLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "UPI",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "Sk4W2",
+                                      "name": "n1UpiInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "joaNH",
+                                          "name": "n1UpiVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹12,400",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "lriwN",
+                                  "name": "n1CardRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "4DriG",
+                                      "name": "n1CardLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "CARD",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "e6ml8",
+                                      "name": "n1CardInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "85zVz",
+                                          "name": "n1CardVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹8,200",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "4Ihzx",
+                                  "name": "n1CashRow",
+                                  "width": "fill_container",
+                                  "padding": [
+                                    6,
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "iwZWQ",
+                                      "name": "n1CashLabel",
+                                      "fill": "$success",
+                                      "content": "CASH (AUTO)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "s7G1K",
+                                      "name": "n1CashVal",
+                                      "fill": "$success",
+                                      "content": "₹27,245",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 14,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nSx5S",
+                          "name": "Nozzle N2",
+                          "width": "fill_container",
+                          "fill": "$white",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "iSldc",
+                              "name": "n1Header",
+                              "width": "fill_container",
+                              "fill": "$card-bg",
+                              "stroke": {
+                                "thickness": {
+                                  "bottom": 1
+                                },
+                                "fill": "$border"
+                              },
+                              "padding": [
+                                10,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "2iRaL",
+                                  "name": "n1Label",
+                                  "fill": "$text-primary",
+                                  "content": "N2",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hmKFQ",
+                                  "name": "n1Pump",
+                                  "fill": "$text-muted",
+                                  "content": "Pump 1",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "9j798",
+                              "name": "n1Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "kjFiK",
+                                  "name": "n1OpenRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Bz2j9",
+                                      "name": "n1OpenLabel",
+                                      "fill": "$text-muted",
+                                      "content": "OPEN READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "burSY",
+                                      "name": "n1OpenVal",
+                                      "fill": "$text-secondary",
+                                      "content": "32,100.8",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 13,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "zDy0s",
+                                  "name": "n1CloseRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "P5BvQ",
+                                      "name": "n1CloseLabel",
+                                      "fill": "$text-primary",
+                                      "content": "CLOSE READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "xTxDJ",
+                                      "name": "n1CloseInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "BCZHb",
+                                          "name": "n1CloseVal",
+                                          "fill": "$text-primary",
+                                          "content": "32,540.1",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "CvSYJ",
+                                  "name": "n1TestRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "kvIvp",
+                                      "name": "n1TestLabel",
+                                      "fill": "$text-muted",
+                                      "content": "TESTING QTY (L)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "Qk0vS",
+                                      "name": "n1TestInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "2l10h",
+                                          "name": "n1TestVal",
+                                          "fill": "$text-primary",
+                                          "content": "0.0",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "JbnYa",
+                                  "name": "n1Divider",
+                                  "width": "fill_container",
+                                  "height": 1,
+                                  "fill": "$border"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "TsTlK",
+                                  "name": "n1PayLabel",
+                                  "fill": "$text-muted",
+                                  "content": "PAYMENT SPLIT",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "8Ug8F",
+                                  "name": "n1UpiRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "syTk2",
+                                      "name": "n1UpiLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "UPI",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "M1Vqi",
+                                      "name": "n1UpiInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "ZNTOA",
+                                          "name": "n1UpiVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹9,800",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "ho69Q",
+                                  "name": "n1CardRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "zxk8i",
+                                      "name": "n1CardLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "CARD",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "BS26K",
+                                      "name": "n1CardInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "bPzIR",
+                                          "name": "n1CardVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹5,600",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "JfMK4",
+                                  "name": "n1CashRow",
+                                  "width": "fill_container",
+                                  "padding": [
+                                    6,
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "buw0s",
+                                      "name": "n1CashLabel",
+                                      "fill": "$success",
+                                      "content": "CASH (AUTO)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "tHyHP",
+                                      "name": "n1CashVal",
+                                      "fill": "$success",
+                                      "content": "₹31,380",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 14,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "THZM5",
+                          "name": "Nozzle N3",
+                          "width": "fill_container",
+                          "fill": "$white",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "zFXGQ",
+                              "name": "n1Header",
+                              "width": "fill_container",
+                              "fill": "$card-bg",
+                              "stroke": {
+                                "thickness": {
+                                  "bottom": 1
+                                },
+                                "fill": "$border"
+                              },
+                              "padding": [
+                                10,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZEFbo",
+                                  "name": "n1Label",
+                                  "fill": "$text-primary",
+                                  "content": "N3",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "lGi8n",
+                                  "name": "n1Pump",
+                                  "fill": "$text-muted",
+                                  "content": "Pump 2",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "w5rXy",
+                              "name": "n1Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "ztu69",
+                                  "name": "n1OpenRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "AivzY",
+                                      "name": "n1OpenLabel",
+                                      "fill": "$text-muted",
+                                      "content": "OPEN READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "0Xm0b",
+                                      "name": "n1OpenVal",
+                                      "fill": "$text-secondary",
+                                      "content": "18,450.3",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 13,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "4Sf3p",
+                                  "name": "n1CloseRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "X18hZ",
+                                      "name": "n1CloseLabel",
+                                      "fill": "$text-primary",
+                                      "content": "CLOSE READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "vxFEj",
+                                      "name": "n1CloseInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "Y5ffi",
+                                          "name": "n1CloseVal",
+                                          "fill": "$text-primary",
+                                          "content": "18,890.7",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "CgN3e",
+                                  "name": "n1TestRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "s75xv",
+                                      "name": "n1TestLabel",
+                                      "fill": "$text-muted",
+                                      "content": "TESTING QTY (L)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "479tK",
+                                      "name": "n1TestInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "mK2NR",
+                                          "name": "n1TestVal",
+                                          "fill": "$text-primary",
+                                          "content": "1.0",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "nejve",
+                                  "name": "n1Divider",
+                                  "width": "fill_container",
+                                  "height": 1,
+                                  "fill": "$border"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "cmYhN",
+                                  "name": "n1PayLabel",
+                                  "fill": "$text-muted",
+                                  "content": "PAYMENT SPLIT",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "cNbZ2",
+                                  "name": "n1UpiRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "RSCtT",
+                                      "name": "n1UpiLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "UPI",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "gk5Dq",
+                                      "name": "n1UpiInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "T1ren",
+                                          "name": "n1UpiVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹15,200",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "LgSvL",
+                                  "name": "n1CardRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Hn25U",
+                                      "name": "n1CardLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "CARD",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "ESUVw",
+                                      "name": "n1CardInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "4gJYz",
+                                          "name": "n1CardVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹3,100",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "6ydLH",
+                                  "name": "n1CashRow",
+                                  "width": "fill_container",
+                                  "padding": [
+                                    6,
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "HvbbV",
+                                      "name": "n1CashLabel",
+                                      "fill": "$success",
+                                      "content": "CASH (AUTO)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "9ruQS",
+                                      "name": "n1CashVal",
+                                      "fill": "$success",
+                                      "content": "₹28,530",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 14,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mVw0M",
+                  "name": "Diesel Group",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4qZ2m",
+                      "name": "dieselLabel",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "8GhdK",
+                          "name": "dieselDot",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#3498DB"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YCpDg",
+                          "name": "dieselName",
+                          "fill": "$text-primary",
+                          "content": "DIESEL",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "akbai",
+                          "name": "dieselPrice",
+                          "fill": "$text-muted",
+                          "content": "₹94.27/L",
+                          "fontFamily": "Inter",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J6aDA",
+                      "name": "Diesel Nozzle Cards",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yMph4",
+                          "name": "Nozzle D1",
+                          "width": "fill_container",
+                          "fill": "$white",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "4wCA4",
+                              "name": "n1Header",
+                              "width": "fill_container",
+                              "fill": "$card-bg",
+                              "stroke": {
+                                "thickness": {
+                                  "bottom": 1
+                                },
+                                "fill": "$border"
+                              },
+                              "padding": [
+                                10,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "k9ni5",
+                                  "name": "n1Label",
+                                  "fill": "$text-primary",
+                                  "content": "D1",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "7lOSt",
+                                  "name": "n1Pump",
+                                  "fill": "$text-muted",
+                                  "content": "Pump 2",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kb39B",
+                              "name": "n1Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "YWUeZ",
+                                  "name": "n1OpenRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "2uyRs",
+                                      "name": "n1OpenLabel",
+                                      "fill": "$text-muted",
+                                      "content": "OPEN READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "1NeaD",
+                                      "name": "n1OpenVal",
+                                      "fill": "$text-secondary",
+                                      "content": "67,890.4",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 13,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "yrU9u",
+                                  "name": "n1CloseRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "pkIWo",
+                                      "name": "n1CloseLabel",
+                                      "fill": "$text-primary",
+                                      "content": "CLOSE READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "GHeas",
+                                      "name": "n1CloseInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "qlWZr",
+                                          "name": "n1CloseVal",
+                                          "fill": "$text-primary",
+                                          "content": "68,320.1",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "7sQ5t",
+                                  "name": "n1TestRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "aBZPu",
+                                      "name": "n1TestLabel",
+                                      "fill": "$text-muted",
+                                      "content": "TESTING QTY (L)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "O6EEL",
+                                      "name": "n1TestInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "63vMf",
+                                          "name": "n1TestVal",
+                                          "fill": "$text-primary",
+                                          "content": "0.0",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "zjuP8",
+                                  "name": "n1Divider",
+                                  "width": "fill_container",
+                                  "height": 1,
+                                  "fill": "$border"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "IyLzQ",
+                                  "name": "n1PayLabel",
+                                  "fill": "$text-muted",
+                                  "content": "PAYMENT SPLIT",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "GedHO",
+                                  "name": "n1UpiRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "4i3Qf",
+                                      "name": "n1UpiLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "UPI",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "lau9z",
+                                      "name": "n1UpiInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "BxYKH",
+                                          "name": "n1UpiVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹18,500",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "0e7GG",
+                                  "name": "n1CardRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "hDQKa",
+                                      "name": "n1CardLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "CARD",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "VVZpE",
+                                      "name": "n1CardInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "btot8",
+                                          "name": "n1CardVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹7,800",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "mmz7a",
+                                  "name": "n1CashRow",
+                                  "width": "fill_container",
+                                  "padding": [
+                                    6,
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "WICFd",
+                                      "name": "n1CashLabel",
+                                      "fill": "$success",
+                                      "content": "CASH (AUTO)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "jEGFx",
+                                      "name": "n1CashVal",
+                                      "fill": "$success",
+                                      "content": "₹14,200",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 14,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "M3bOI",
+                          "name": "Nozzle D2",
+                          "width": "fill_container",
+                          "fill": "$white",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Anf3Q",
+                              "name": "n1Header",
+                              "width": "fill_container",
+                              "fill": "$card-bg",
+                              "stroke": {
+                                "thickness": {
+                                  "bottom": 1
+                                },
+                                "fill": "$border"
+                              },
+                              "padding": [
+                                10,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "sJRom",
+                                  "name": "n1Label",
+                                  "fill": "$text-primary",
+                                  "content": "D2",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "wVkD7",
+                                  "name": "n1Pump",
+                                  "fill": "$text-muted",
+                                  "content": "Pump 3",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FXEfO",
+                              "name": "n1Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "rgxQ0",
+                                  "name": "n1OpenRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "5giTY",
+                                      "name": "n1OpenLabel",
+                                      "fill": "$text-muted",
+                                      "content": "OPEN READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "WaTGq",
+                                      "name": "n1OpenVal",
+                                      "fill": "$text-secondary",
+                                      "content": "54,120.7",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 13,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "K9N6Z",
+                                  "name": "n1CloseRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "fomar",
+                                      "name": "n1CloseLabel",
+                                      "fill": "$text-primary",
+                                      "content": "CLOSE READING",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "BB9rd",
+                                      "name": "n1CloseInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "g6QF3",
+                                          "name": "n1CloseVal",
+                                          "fill": "$text-primary",
+                                          "content": "54,580.3",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "jI9bP",
+                                  "name": "n1TestRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "qDqXP",
+                                      "name": "n1TestLabel",
+                                      "fill": "$text-muted",
+                                      "content": "TESTING QTY (L)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "GmHRv",
+                                      "name": "n1TestInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "evYGJ",
+                                          "name": "n1TestVal",
+                                          "fill": "$text-primary",
+                                          "content": "0.5",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "i40tR",
+                                  "name": "n1Divider",
+                                  "width": "fill_container",
+                                  "height": 1,
+                                  "fill": "$border"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Se4ad",
+                                  "name": "n1PayLabel",
+                                  "fill": "$text-muted",
+                                  "content": "PAYMENT SPLIT",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "6Ibfp",
+                                  "name": "n1UpiRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Gde61",
+                                      "name": "n1UpiLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "UPI",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "1pqTl",
+                                      "name": "n1UpiInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "iLHXG",
+                                          "name": "n1UpiVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹11,200",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "xCbFd",
+                                  "name": "n1CardRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "aBOeq",
+                                      "name": "n1CardLabel",
+                                      "fill": "$text-secondary",
+                                      "content": "CARD",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "FWxwY",
+                                      "name": "n1CardInput",
+                                      "width": 100,
+                                      "height": 30,
+                                      "fill": "$input-bg",
+                                      "stroke": {
+                                        "thickness": 1,
+                                        "fill": "$border"
+                                      },
+                                      "padding": [
+                                        0,
+                                        8
+                                      ],
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "b4Joq",
+                                          "name": "n1CardVal",
+                                          "fill": "$text-primary",
+                                          "content": "₹6,400",
+                                          "fontFamily": "Space Grotesk",
+                                          "fontSize": 13,
+                                          "fontWeight": "500"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "KHeXZ",
+                                  "name": "n1CashRow",
+                                  "width": "fill_container",
+                                  "padding": [
+                                    6,
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "sNPR4",
+                                      "name": "n1CashLabel",
+                                      "fill": "$success",
+                                      "content": "CASH (AUTO)",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 10,
+                                      "fontWeight": "600",
+                                      "letterSpacing": 1
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "aaKxD",
+                                      "name": "n1CashVal",
+                                      "fill": "$success",
+                                      "content": "₹25,710",
+                                      "fontFamily": "Space Grotesk",
+                                      "fontSize": 14,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OwaaE",
+          "name": "Credit Transaction Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RVqbb",
+              "name": "Credit Header",
+              "width": "fill_container",
+              "fill": "$white",
+              "stroke": {
+                "thickness": {
+                  "top": 3,
+                  "bottom": 1
+                },
+                "fill": "$accent"
+              },
+              "padding": [
+                14,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Sm4Ly",
+                  "name": "creditLeft",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "bQzko",
+                      "name": "creditIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "credit-card",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Py4Ig",
+                      "name": "creditTitle",
+                      "fill": "$accent",
+                      "content": "+ ADD CREDIT TRANSACTION",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "Ma96j",
+                  "name": "creditChevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cmC89",
+              "name": "Credit Body",
+              "width": "fill_container",
+              "fill": "$white",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$border"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Mj2KX",
+                  "name": "Credit Entry 1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6KyLp",
+                      "name": "crNozzle",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B5ZfC",
+                          "name": "crNozzleLabel",
+                          "fill": "$text-secondary",
+                          "content": "NOZZLE",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZAQuF",
+                          "name": "crNozzleInput",
+                          "width": "fill_container",
+                          "height": 38,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "boJHI",
+                              "name": "crNozzleVal",
+                              "fill": "$text-primary",
+                              "content": "N1 — Petrol",
+                              "fontFamily": "Inter",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "NRrNZ",
+                              "name": "crNozzleChev",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wRuZw",
+                      "name": "crCustomer",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GtGo8",
+                          "name": "crCustLabel",
+                          "fill": "$text-secondary",
+                          "content": "CREDIT CUSTOMER",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vmTmR",
+                          "name": "crCustInput",
+                          "width": "fill_container",
+                          "height": 38,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ArqfO",
+                              "name": "crCustVal",
+                              "fill": "$text-primary",
+                              "content": "Sharma Transport Co.",
+                              "fontFamily": "Inter",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "tINtl",
+                              "name": "crCustChev",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdESC",
+                      "name": "crVehicle",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MxfTo",
+                          "name": "crVehLabel",
+                          "fill": "$text-secondary",
+                          "content": "VEHICLE",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Tgftt",
+                          "name": "crVehInput",
+                          "width": "fill_container",
+                          "height": 38,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "377dF",
+                              "name": "crVehVal",
+                              "fill": "$text-primary",
+                              "content": "MH-12-AB-1234",
+                              "fontFamily": "Inter",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "d9K9e",
+                              "name": "crVehChev",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7wJc8",
+                  "name": "Toggle and Amount Row",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "byVDo",
+                      "name": "crToggle",
+                      "width": 200,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nz0er",
+                          "name": "crToggleLabel",
+                          "fill": "$text-secondary",
+                          "content": "ENTRY TYPE",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YdMFU",
+                          "name": "crToggleBar",
+                          "width": "fill_container",
+                          "height": 38,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "liigZ",
+                              "name": "crToggleQty",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": "$dark-bg",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "YkPOp",
+                                  "name": "crToggleQtyText",
+                                  "fill": "$text-on-dark",
+                                  "content": "QUANTITY",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Gd6QU",
+                              "name": "crToggleAmt",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": "$input-bg",
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$border"
+                              },
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "wCFlg",
+                                  "name": "crToggleAmtText",
+                                  "fill": "$text-muted",
+                                  "content": "AMOUNT",
+                                  "fontFamily": "Space Grotesk",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L9j1M",
+                      "name": "crValueGroup",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rXSsY",
+                          "name": "crValueLabel",
+                          "fill": "$text-secondary",
+                          "content": "QUANTITY (LITRES)",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "NIe6c",
+                          "name": "crValueInput",
+                          "width": "fill_container",
+                          "height": 38,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "9Yqtd",
+                              "name": "crValueVal",
+                              "fill": "$text-primary",
+                              "content": "150",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Bur0O",
+                      "name": "crCalcGroup",
+                      "width": 180,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ti6Vk",
+                          "name": "crCalcLabel",
+                          "fill": "$success",
+                          "content": "AMOUNT (AUTO)",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fE1Xd",
+                          "name": "crCalcVal",
+                          "width": "fill_container",
+                          "height": 38,
+                          "fill": "#EDF7ED",
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "1KlFS",
+                              "name": "crCalcText",
+                              "fill": "$success",
+                              "content": "₹15,946.50",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uJQVm",
+                  "name": "Add Credit Button",
+                  "fill": "$accent-light",
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Azw0U",
+                      "name": "crAddIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "plus",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JOH6X",
+                      "name": "crAddText",
+                      "fill": "$accent",
+                      "content": "Add Another Transaction",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "G4G2I",
+          "name": "Expense Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NQmZ9",
+              "name": "Expense Header",
+              "width": "fill_container",
+              "fill": "$white",
+              "stroke": {
+                "thickness": {
+                  "top": 3,
+                  "bottom": 1
+                },
+                "fill": "$accent"
+              },
+              "padding": [
+                14,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "M7e0q",
+                  "name": "expLeft",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "m5VJP",
+                      "name": "expIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "receipt",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "laq4Z",
+                      "name": "expTitle",
+                      "fill": "$accent",
+                      "content": "+ ADD EXPENSE",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "2ewGp",
+                  "name": "expChevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rcbSE",
+              "name": "Expense Body",
+              "width": "fill_container",
+              "fill": "$white",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hh3kz",
+                  "name": "Expense Table Header",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "$card-bg",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "h5w5f",
+                      "name": "expThCat",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eTYJC",
+                          "name": "expThCatText",
+                          "fill": "$text-secondary",
+                          "content": "CATEGORY",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6cAdx",
+                      "name": "expThAmt",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tjhix",
+                          "name": "expThAmtText",
+                          "fill": "$text-secondary",
+                          "content": "AMOUNT (₹)",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "s7HQF",
+                      "name": "expThPay",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wtuzr",
+                          "name": "expThPayText",
+                          "fill": "$text-secondary",
+                          "content": "PAYMENT TYPE",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TRVN4",
+                      "name": "expThVendor",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8a0F8",
+                          "name": "expThVendorText",
+                          "fill": "$text-secondary",
+                          "content": "VENDOR NAME",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OUW9x",
+                      "name": "expThDesc",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eOp2R",
+                          "name": "expThDescText",
+                          "fill": "$text-secondary",
+                          "content": "DESCRIPTION",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eEBnx",
+                  "name": "Expense Row 1",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$white",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IwW95",
+                      "name": "expR1Cat",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CpVeK",
+                          "name": "expR1CatDrop",
+                          "width": 160,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bszKA",
+                              "name": "expR1CatVal",
+                              "fill": "$text-primary",
+                              "content": "Maintenance",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "jcHpB",
+                              "name": "expR1CatChev",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N8Cau",
+                      "name": "expR1Amt",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pCM2R",
+                          "name": "expR1AmtInput",
+                          "width": 110,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NNrDO",
+                              "name": "expR1AmtVal",
+                              "fill": "$text-primary",
+                              "content": "₹2,500",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xJZL8",
+                      "name": "expR1Pay",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "7vXVI",
+                          "name": "expR1PayDrop",
+                          "width": 110,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "gZ4sv",
+                              "name": "expR1PayVal",
+                              "fill": "$text-primary",
+                              "content": "Cash",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "X5jmn",
+                              "name": "expR1PayChev",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bjV7K",
+                      "name": "expR1Vendor",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iT1Dh",
+                          "name": "expR1VendorInput",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Otczz",
+                              "name": "expR1VendorVal",
+                              "fill": "$text-primary",
+                              "content": "ABC Services",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JxdXA",
+                      "name": "expR1Desc",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "3d4yl",
+                          "name": "expR1DescInput",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "A8mKR",
+                              "name": "expR1DescVal",
+                              "fill": "$text-primary",
+                              "content": "Pump motor repair",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7IA6E",
+                  "name": "Expense Row 2",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$white",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fyeZN",
+                      "name": "expR2Cat",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rixnb",
+                          "name": "expR2CatDrop",
+                          "width": 160,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "9TMnn",
+                              "name": "expR2CatVal",
+                              "fill": "$text-primary",
+                              "content": "Utilities",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "g0UOK",
+                              "name": "expR2CatChev",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wO6ax",
+                      "name": "expR2Amt",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "aI4Y1",
+                          "name": "expR2AmtInput",
+                          "width": 110,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rOwKM",
+                              "name": "expR2AmtVal",
+                              "fill": "$text-primary",
+                              "content": "₹1,200",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rjj9E",
+                      "name": "expR2Pay",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Fj0I1",
+                          "name": "expR2PayDrop",
+                          "width": 110,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "IqQYr",
+                              "name": "expR2PayVal",
+                              "fill": "$text-primary",
+                              "content": "UPI",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "gvL8t",
+                              "name": "expR2PayChev",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "S2FHN",
+                      "name": "expR2Vendor",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "s4LZr",
+                          "name": "expR2VendorInput",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NDpdy",
+                              "name": "expR2VendorVal",
+                              "fill": "$text-primary",
+                              "content": "State Electricity",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ee50Z",
+                      "name": "expR2Desc",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qUZIe",
+                          "name": "expR2DescInput",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "4TnDS",
+                              "name": "expR2DescVal",
+                              "fill": "$text-primary",
+                              "content": "Monthly electricity bill",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T5qUZ",
+                  "name": "Expense Add Row",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$white",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ZRB3m",
+                      "name": "expAddIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "plus",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GAUf9",
+                      "name": "expAddText",
+                      "fill": "$accent",
+                      "content": "Add Item",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ovm6N",
+          "name": "Product Sale Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "DE2sF",
+              "name": "Product Header",
+              "width": "fill_container",
+              "fill": "$white",
+              "stroke": {
+                "thickness": {
+                  "top": 3,
+                  "bottom": 1
+                },
+                "fill": "$gold"
+              },
+              "padding": [
+                14,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jOkgM",
+                  "name": "prodLeft",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "76fw9",
+                      "name": "prodIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "package",
+                      "iconFontFamily": "lucide",
+                      "fill": "$gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "I4eCz",
+                      "name": "prodTitle",
+                      "fill": "#8B7310",
+                      "content": "+ ADD PRODUCT SALE",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "EUP1Z",
+                  "name": "prodChevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nq0BT",
+              "name": "Product Body",
+              "width": "fill_container",
+              "fill": "$white",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "msNMz",
+                  "name": "Product Table Header",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "$gold-light",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5K0Kt",
+                      "name": "prodThName",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mmkmW",
+                          "name": "prodThNameText",
+                          "fill": "$text-secondary",
+                          "content": "PRODUCT",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bd9Pj",
+                      "name": "prodThQty",
+                      "width": 100,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LUZKz",
+                          "name": "prodThQtyText",
+                          "fill": "$text-secondary",
+                          "content": "QTY",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Eg4Wd",
+                      "name": "prodThPrice",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gWz07",
+                          "name": "prodThPriceText",
+                          "fill": "$text-secondary",
+                          "content": "UNIT PRICE (₹)",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "at2KG",
+                      "name": "prodThPay",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BkS8z",
+                          "name": "prodThPayText",
+                          "fill": "$text-secondary",
+                          "content": "PAYMENT TYPE",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rehc4",
+                      "name": "prodThAmt",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CRsyZ",
+                          "name": "prodThAmtText",
+                          "fill": "$text-secondary",
+                          "content": "AMOUNT (₹)",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wpmdl",
+                  "name": "Product Row 1",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$white",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DLGho",
+                      "name": "pR1Name",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kwD9w",
+                          "name": "pR1NameDrop",
+                          "width": 180,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "p1ZwD",
+                              "name": "pR1NameVal",
+                              "fill": "$text-primary",
+                              "content": "Engine Oil 1L",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "Si1qy",
+                              "name": "pR1NameChev",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gBdYi",
+                      "name": "pR1Qty",
+                      "width": 100,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CSX79",
+                          "name": "pR1QtyInput",
+                          "width": 70,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "25K35",
+                              "name": "pR1QtyVal",
+                              "fill": "$text-primary",
+                              "content": "3",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a1RDF",
+                      "name": "pR1Price",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HqC9D",
+                          "name": "pR1PriceInput",
+                          "width": 110,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "78OMe",
+                              "name": "pR1PriceVal",
+                              "fill": "$text-primary",
+                              "content": "₹350",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "svKbG",
+                      "name": "pR1Pay",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CuAXq",
+                          "name": "pR1PayDrop",
+                          "width": 110,
+                          "height": 32,
+                          "fill": "$input-bg",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nsEvF",
+                              "name": "pR1PayVal",
+                              "fill": "$text-primary",
+                              "content": "Cash",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "yXHYg",
+                              "name": "pR1PayChev",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g8C2Y",
+                      "name": "pR1Amt",
+                      "width": 140,
+                      "height": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K5zWr",
+                          "name": "pR1AmtVal",
+                          "fill": "$text-primary",
+                          "content": "₹1,050",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I2RFq",
+                  "name": "Product Add Row",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$white",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tEnp6",
+                      "name": "pAddIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "plus",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B7310"
+                    },
+                    {
+                      "type": "text",
+                      "id": "7Zyft",
+                      "name": "pAddText",
+                      "fill": "#8B7310",
+                      "content": "Add Product",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "98BEd",
+          "name": "Footer",
+          "width": "fill_container",
+          "gap": 16,
+          "padding": [
+            8,
+            0,
+            0,
+            0
+          ],
+          "justifyContent": "end",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Cg3jk",
+              "name": "Save All Button",
+              "width": 200,
+              "height": 48,
+              "fill": "$dark-bg",
+              "gap": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "ObnEu",
+                  "name": "saveIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "save",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-on-dark"
+                },
+                {
+                  "type": "text",
+                  "id": "T0FRA",
+                  "name": "saveText",
+                  "fill": "$text-on-dark",
+                  "content": "SAVE ALL",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#C05A3C"
+    },
+    "accent-light": {
+      "type": "color",
+      "value": "#F0D9D0"
+    },
+    "border": {
+      "type": "color",
+      "value": "#D1CCC4"
+    },
+    "border-dark": {
+      "type": "color",
+      "value": "#3a3a3a"
+    },
+    "card-bg": {
+      "type": "color",
+      "value": "#E8E4DC"
+    },
+    "dark-bg": {
+      "type": "color",
+      "value": "#1a1a1a"
+    },
+    "dark-surface": {
+      "type": "color",
+      "value": "#2a2a2a"
+    },
+    "error": {
+      "type": "color",
+      "value": "#B54A4A"
+    },
+    "gold": {
+      "type": "color",
+      "value": "#D4A024"
+    },
+    "gold-light": {
+      "type": "color",
+      "value": "#FDF3D7"
+    },
+    "info": {
+      "type": "color",
+      "value": "#5C7C8A"
+    },
+    "input-bg": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "page-bg": {
+      "type": "color",
+      "value": "#F5F3EF"
+    },
+    "success": {
+      "type": "color",
+      "value": "#4A7C59"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#888888"
+    },
+    "text-on-dark": {
+      "type": "color",
+      "value": "#F5F3EF"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1a1a1a"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#555555"
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}
