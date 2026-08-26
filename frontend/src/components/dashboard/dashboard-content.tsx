@@ -149,7 +149,7 @@ export function DashboardContent() {
         <div>
           <h1 className="text-2xl font-bold">Dashboard</h1>
           <p className="text-muted-foreground mt-1">
-            Welcome to Petro Astra. Get started by adding your first station.
+            Welcome to Fuel2Fill. Get started by adding your first station.
           </p>
         </div>
         <Card>

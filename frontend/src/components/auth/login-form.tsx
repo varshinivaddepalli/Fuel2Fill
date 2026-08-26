@@ -49,7 +49,7 @@ export function LoginForm({ className, ...props }: React.ComponentProps<"div">) 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-2xl font-bold">Welcome to Petro Astra</h1>
+        <h1 className="text-2xl font-bold">Welcome to Fuel2Fill</h1>
         <p className="text-balance text-sm text-muted-foreground">
           Secure access with your email credentials
         </p>

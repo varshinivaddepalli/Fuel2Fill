@@ -4,7 +4,7 @@ import { Loader2 } from "lucide-react"
 import { DashboardContent } from "@/components/dashboard/dashboard-content"
 
 export const metadata: Metadata = {
-  title: "Dashboard | Petro Astra",
+  title: "Dashboard | Fuel2Fill",
   description: "Overview of your fuel station operations",
 }
 

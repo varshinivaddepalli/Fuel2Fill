@@ -35,7 +35,7 @@ export default async function OnboardingPage() {
       <main className="flex-1 flex items-center justify-center p-6">
         <div className="w-full max-w-2xl">
           <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold tracking-tight">Welcome to Petro Astra</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Welcome to Fuel2Fill</h1>
             <p className="mt-2 text-muted-foreground">
               Let&apos;s set up your profile to get started
             </p>

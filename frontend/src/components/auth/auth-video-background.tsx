@@ -26,7 +26,7 @@ export function AuthVideoBackground() {
               <div className="relative">
                 <Image
                   src="/logo.png"
-                  alt="Petro Astra"
+                  alt="Fuel2Fill"
                   width={48}
                   height={48}
                   className="rounded-xl"
@@ -36,7 +36,7 @@ export function AuthVideoBackground() {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-semibold tracking-tight text-foreground">
-                  Petro Astra
+                  Fuel2Fill
                 </span>
                 <span className="text-xs text-muted-foreground">
                   Loading...

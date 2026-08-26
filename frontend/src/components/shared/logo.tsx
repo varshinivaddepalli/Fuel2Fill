@@ -14,12 +14,12 @@ export function Logo({ href = "/dashboard", className, showText = true, size = 3
     <div className={cn("flex items-center gap-2 font-semibold", className)}>
       <Image
         src="/logo.png"
-        alt="Petro Astra"
+        alt="Fuel2Fill"
         width={size}
         height={size}
         className="rounded-md"
       />
-      {showText && <span>Petro Astra</span>}
+      {showText && <span>Fuel2Fill</span>}
     </div>
   )
 

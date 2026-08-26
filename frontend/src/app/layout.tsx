@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Petro-Astra",
-  description: "Petro Astra Internal Dashboard",
+  description: "Fuel2Fill Internal Dashboard",
 };
 
 export default function RootLayout({

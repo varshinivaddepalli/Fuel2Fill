@@ -110,7 +110,7 @@ export function OnboardingForm({ userEmail }: OnboardingFormProps) {
       }
 
       toast.success("Profile created successfully!", {
-        description: "Welcome to Petro Astra.",
+        description: "Welcome to Fuel2Fill.",
       })
       router.push("/dashboard")
       return
