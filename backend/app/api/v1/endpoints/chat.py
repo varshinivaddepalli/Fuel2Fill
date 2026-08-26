@@ -91,10 +91,13 @@ async def ask_question(
             retry_count=result.get("retry_count", 0),
             query_classification=result.get("query_classification"),
         )
-    except Exception:
+    except Exception as e:
+        import traceback
+        import logging
+        logging.error(f"Ask Astra error: {type(e).__name__}: {e}\n{traceback.format_exc()}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="An error occurred while processing your request.",
+            detail=f"An error occurred while processing your request: {type(e).__name__}: {str(e)}",
         )
 
 
