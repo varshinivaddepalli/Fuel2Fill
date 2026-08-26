@@ -7,7 +7,7 @@
  * Uses server action to avoid CORS issues with direct browser requests.
  */
 
-const API_URL = process.env.NEXT_PUBLIC_ASK_ASTRA_API_URL || "http://localhost:8000";
+const API_URL = process.env.ASK_ASTRA_INTERNAL_URL || process.env.NEXT_PUBLIC_ASK_ASTRA_API_URL || "http://localhost:8000";
 
 export async function checkBackendHealth(): Promise<{
   healthy: boolean;

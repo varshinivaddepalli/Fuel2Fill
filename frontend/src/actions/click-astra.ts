@@ -262,7 +262,7 @@ export async function processClickAstraOCR(id: string): Promise<{
     const accessToken = session?.session?.access_token
 
     // Call backend API to process OCR
-    const backendUrl = process.env.NEXT_PUBLIC_ASK_ASTRA_API_URL || "http://localhost:8000"
+    const backendUrl = process.env.ASK_ASTRA_INTERNAL_URL || process.env.NEXT_PUBLIC_ASK_ASTRA_API_URL || "http://localhost:8000"
 
     const response = await fetch(`${backendUrl}/api/v1/click-astra/process`, {
       method: "POST",

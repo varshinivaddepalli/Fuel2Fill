@@ -16,7 +16,7 @@ import type {
   ConversationHistoryMessage,
 } from "@/types/ask-astra";
 
-const API_URL = process.env.NEXT_PUBLIC_ASK_ASTRA_API_URL || "http://localhost:8000";
+const API_URL = process.env.ASK_ASTRA_INTERNAL_URL || process.env.NEXT_PUBLIC_ASK_ASTRA_API_URL || "http://localhost:8000";
 
 async function getAuthToken(): Promise<string | null> {
   const supabase = await createClient();
