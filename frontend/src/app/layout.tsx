@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Petro-Astra",
+  title: "Fuel2Fill",
   description: "Fuel2Fill Internal Dashboard",
 };
 
